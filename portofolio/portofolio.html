@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <title>AR Group</title>
+</head>
+<body>
+    
+    <!-- Sidebar -->
+    <input type="checkbox" id="check">
+    <div class="sidebar">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../about/about.html">About</a></li>
+            <li><a href="portofolio.html">Portofolio</a></li>
+            <li><a href="../contact/contact.html">Contact</a></li>
+        </ul>
+        <label for="check" class="mobile-menuback"><i class="fa-solid fa-circle-xmark"></i></label>
+    </div>
+
+    <!--Header-->
+    <header>
+        <div class="container">
+            <img src="../images/logo.png" alt="logo">
+            <h1><a href="../index.html">Redho AR</a></h1>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about/about.html">About</a></li>
+                <li class="active"><a href="../portofolio/portofolio.html">Portofolio</a></li>
+                <li><a href="../contact/contact.html">Contact</a></li>
+            </ul>
+            <label for="check" class="mobile-menu"><i class="fa-solid fa-bars-progress"></i></label>
+        </div>
+    </header>
+
+    <!--Image Slide-->
+    <div class="container">
+        <div class="content-slide">
+            <div class="imgslide fade">
+                <img src="../images/logo slide 1.jpg" alt="" class="x">
+            </div>
+            <div class="imgslide fade">
+                <img src="../images/logo slide 2.png" alt="" class="x">
+            </div>
+            <div class="imgslide fade">
+                <img src="../images/logo slide 3.jpg" alt="" class="x">
+            </div>
+            <div class="imgslide fade">
+                <img src="../images/logo slide 4.png" alt="" class="x">
+            </div>
+            <a class="prev" onClick="nextslide(-1)">&#10094;</a>
+            <a class="next" onClick="nextslide(1)">&#10095;</a>
+        </div>
+        <div class="page">
+            <span class="dot" onClick="dotslide(1)"></span>
+            <span class="dot" onClick="dotslide(2)"></span>
+            <span class="dot" onClick="dotslide(3)"></span>
+            <span class="dot" onClick="dotslide(4)"></span>
+        </div>
+    </div>
+
+    <!--Link Portofolio-->
+    <div class="container">
+        <div class="porto glow">
+            <h4>Portofolio</h4>
+        </div>
+        <div class="portolio">
+            <div class="lio">
+                <div class="icon"><a href="https://github.com/MRedhoAR/" target="_blank"><i class="fa-brands fa-github"></i></a></div>
+                <span><a href="https://github.com/MRedhoAR/" target="_blank">Github</a></span>
+            </div>
+            <div class="lio">
+                <div class="icon"><a href="https://www.instagram.com/mrar008/" target="_blank"><i class="fa-brands fa-instagram"></i></a></div>
+                <span> <a href="https://www.instagram.com/mrar008/" target="_blank">Instagram</a></span>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <footer>
+        <div class="container">
+            <small>Copyright &copy; 2022 - Redho AR. All Rights Reserved.</small>
+        </div>
+    </footer>
+
+    <script src="../js/script1.js"></script>
+</body>
+</html>
